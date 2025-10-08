@@ -1,14 +1,13 @@
 public class Day31 {
     public static void main(String[] args) {
+        // operator logika AND (&&) akan menghasilkan true
+        // hanya jika kedua kondisi bernilai true
 
-        int umur = 19;
-        boolean punyaKTP = true;
+        int angka1 = 8;
+        int angka2 = 12;
 
-        // kondisi akan true kalau dua-duanya bernilai true
-        if (umur >= 17 && punyaKTP == true) {
-            System.out.println("kamu sudah boleh membuat SIM!");
-        } else {
-            System.out.println("kamu belum bisa membuat SIM.");
-        }
+        System.out.println(angka1 > 5 && angka2 > 10); // true && true = true
+        System.out.println(angka1 > 5 && angka2 < 10); // true && false = false
+        System.out.println(angka1 < 5 && angka2 > 10); // false && true = false
     }
 }
