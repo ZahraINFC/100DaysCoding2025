@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Day69 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan panjang: ");
+        int panjang = input.nextInt();
+
+        System.out.print("Masukkan lebar: ");
+        int lebar = input.nextInt();
+
+        // pola persegi panjang
+        for (int i = 0; i < lebar; i++) {
+            for (int j = 0; j < panjang; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
